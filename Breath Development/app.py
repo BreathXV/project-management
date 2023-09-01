@@ -23,7 +23,6 @@ def saveError(errorMessage, functionName, errorCodeDisplayed):
     with open(f'./errors/logs/{functionName}_{date_string}{time_string}.txt', 'w') as f:
         f.write(f"SQLite Error recorded on {date_string} at {time_string} on {functionName}:\n\n{errorMessage}\n\nError Code is: {errorCodeDisplayed}\n")
 
-# Initialize database
 def initialize_database():
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
@@ -65,14 +64,11 @@ def login_required(f):
 
 @app.before_request
 def require_login():
-    # List of routes that do not require authentication
     public_routes = ['login', 'error']
 
-    # Check if the user is not logged in and the route is not in public_routes
     if 'username' not in session and request.endpoint not in public_routes:
         return redirect(url_for('login'))
 
-# User Authentication
 def create_user(username, password, role):
     try:
         conn = sqlite3.connect('database.db')
@@ -153,7 +149,6 @@ def fetch_projects():
         conn = sqlite3.connect('database.db')  # Update the database name if needed
         cursor = conn.cursor()
         
-        # Fetch all projects from the database
         cursor.execute('SELECT * FROM projects')
         projects = cursor.fetchall()
         
@@ -166,14 +161,11 @@ def fetch_projects():
 
 def get_all_projects():
     try:
-        # Connect to the SQLite database
         conn = sqlite3.connect('your_database.db')  # Replace 'your_database.db' with your database file path
         cursor = conn.cursor()
 
-        # Query to retrieve all projects from the database
         cursor.execute("SELECT * FROM projects")
 
-        # Fetch all project records as a list of dictionaries
         all_projects = []
         for row in cursor.fetchall():
             project = {
@@ -188,13 +180,11 @@ def get_all_projects():
             }
             all_projects.append(project)
 
-        # Close the database connection
         conn.close()
 
         return all_projects
 
     except Exception as e:
-        # Handle any exceptions that might occur during database access
         logging.error('An error occurred while fetching all projects: %s', str(e))
         return []
 
@@ -203,10 +193,8 @@ def delete_project_by_id(project_id):
         conn = sqlite3.connect('database.db')
         cursor = conn.cursor()
 
-        # Check if the project exists before deleting it
         project = cursor.execute('SELECT * FROM projects WHERE id = ?', (project_id,)).fetchone()
         if project:
-            # Delete the project
             cursor.execute('DELETE FROM projects WHERE id = ?', (project_id,))
             conn.commit()
             conn.close()
@@ -219,7 +207,6 @@ def delete_project_by_id(project_id):
         logging.error('An error occurred: %s', str(e))
         return False  # An error occurred during deletion
 
-# Routes
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -251,13 +238,11 @@ def dashboard():
     projects = get_user_projects(username)
     return render_template('dashboard.html', projects=projects)
 
-# Other routes (project management, project details, staff management) can be added here
 @app.route('/project_management')
 @login_required
 def project_management():
     try:
         if session.get('is_admin') or session.get('is_manager'):
-            # Fetch users from the database
             conn = sqlite3.connect('database.db')
             cursor = conn.cursor()
             users = cursor.execute('SELECT * FROM users').fetchall()
@@ -311,7 +296,6 @@ def delete_project():
         if request.method == 'POST':
             project_id = request.form['project-id-delete']
 
-            # Check if the project exists
             conn = sqlite3.connect('./database.db')
             cursor = conn.cursor()
             cursor.execute('SELECT * FROM projects WHERE id = ?', (project_id,))
@@ -321,7 +305,6 @@ def delete_project():
 
     try:
         if project:
-            # Project exists, delete it
             cursor.execute('DELETE FROM projects WHERE id = ?', (project_id,))
             conn.commit()
             conn.close()
@@ -335,12 +318,10 @@ def delete_project():
 
 @app.route('/assign_members', methods=['GET', 'POST'])
 def assign_members():
-    # Check if the user is logged in
     if 'username' not in session:
         flash('You need to log in first.', 'danger')
         return redirect(url_for('login'))
 
-    # Check if the user is an operation manager (adjust this condition as needed)
     if 'is_admin' not in session or not session['is_admin']:
         flash('You are not authorized to access this page.', 'danger')
         return redirect(url_for('dashboard'))
@@ -349,7 +330,6 @@ def assign_members():
         project_id = request.form['project-id']
         members = request.form['member-username']
 
-        # Parse the member usernames (comma-separated)
         member_list = [m.strip() for m in members.split(',')]
 
         try:
@@ -357,19 +337,14 @@ def assign_members():
             cursor = conn.cursor()
 
             for member_username in member_list:
-                # Ensure the member username exists in the users table
                 user = cursor.execute('SELECT * FROM users WHERE username = ?', (member_username,)).fetchone()
                 if user:
-                    # Update the assignee column of the project with the member's username
                     cursor.execute('UPDATE projects SET assignee = ? WHERE id = ?', (member_username, project_id))
                 else:
-                    # Handle the case where the member username does not exist
                     flash(f'Member username "{member_username}" does not exist.', 'danger')
 
-            # Commit the changes to the database
             conn.commit()
 
-            # Close the database connection
             conn.close()
 
             flash('Member assigned to project successfully', 'success')
@@ -378,7 +353,6 @@ def assign_members():
             flash(f'Error assigning member: {str(e)}', 'danger')
             logging.error('An error occurred: %s', str(e))
 
-    # Fetch projects from the database (you need to implement this)
     try:
         projects = fetch_projects()
     except Exception as e:
@@ -411,7 +385,6 @@ def projects(project_type):
     except Exception as e:
         logging.error('An error occurred: %s', str(e))
 
-# Display project details
 @app.route('/project/<int:project_id>')
 @login_required
 def project_details(project_id):
@@ -425,7 +398,6 @@ def project_details(project_id):
     except Exception as e:
         logging.error('An error occurred: %s', str(e))
 
-# Staff Management routes
 @app.route('/staff_management')
 @login_required
 def staff_management():
@@ -447,10 +419,8 @@ def register_user():
             password = request.form['password']
             role = request.form['role']
 
-            # Hash the password before storing it
             hashed_password = generate_password_hash(password, method='sha256')
 
-            # Insert user into the database
             conn = sqlite3.connect('database.db')
             cursor = conn.cursor()
             cursor.execute('INSERT INTO users (username, password, role) VALUES (?, ?, ?)',
@@ -466,7 +436,6 @@ def register_user():
     except Exception as e:
         logging.error('An error occurred: %s', str(e))
 
-# Error Temp
 @app.route('/error')
 def error_page(errorIdentifier, errorMessage, errorFunction):
     try:
