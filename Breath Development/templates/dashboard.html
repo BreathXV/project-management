@@ -11,4 +11,8 @@
       </li>
     {% endfor %}
   </ul>
+
+  <!-- Link to the 'Projects' page with the 'project_type' parameter -->
+  <li><a href="{{ url_for('projects', project_type='user') }}">User Projects</a></li>
+  <li><a href="{{ url_for('projects', project_type='all') }}">All Projects</a></li>
 {% endblock %}

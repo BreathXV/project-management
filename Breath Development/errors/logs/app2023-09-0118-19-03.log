@@ -1,0 +1,18 @@
+2023-09-01 18:19:03,190 - werkzeug - WARNING -  * Debugger is active!
+2023-09-01 18:19:03,192 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-01 18:19:11,183 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:11] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2023-09-01 18:19:11,239 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:11] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-01 18:19:11,240 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:11] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-01 18:19:11,251 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:11] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-01 18:19:11,259 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:11] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-01 18:19:30,953 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:30] "[33mGET /projects HTTP/1.1[0m" 404 -
+2023-09-01 18:19:34,513 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:34] "[33mGET /project HTTP/1.1[0m" 404 -
+2023-09-01 18:19:37,460 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:37] "GET /login HTTP/1.1" 200 -
+2023-09-01 18:19:37,467 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:37] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2023-09-01 18:19:41,026 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:41] "POST /login HTTP/1.1" 200 -
+2023-09-01 18:19:41,034 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:19:41] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2023-09-01 18:20:06,375 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:20:06] "[35m[1mGET /project_management HTTP/1.1[0m" 500 -
+2023-09-01 18:20:06,387 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:20:06] "GET /project_management?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-01 18:20:06,387 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:20:06] "GET /project_management?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-01 18:20:06,395 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:20:06] "GET /project_management?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-01 18:20:06,421 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 18:20:06] "[36mGET /project_management?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
