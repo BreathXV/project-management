@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Create New Project</h2>
+  <form method="POST">
+    <label for="project_name">Project Name:</label>
+    <input type="text" id="project_name" name="project_name" required>
+    
+    <label for="project_tag">Project Tag:</label>
+    <input type="text" id="project_tag" name="project_tag">
+    
+    <label for="project_description">Project Description:</label>
+    <textarea id="project_description" name="project_description" required></textarea>
+    
+    <label for="project_payment">Project Payment: £</label>
+    <input type="number" id="project_payment" name="project_payment" step="0.01" required>
+    
+    <label for="project_due_date">Project Due Date:</label>
+    <input type="date" id="project_due_date" name="project_due_date" required>
+    
+    <label for="project_platform">Project Platform:</label>
+    <input type="text" id="project_platform" name="project_platform" required>
+    
+    <button type="submit">Create Project</button>
+  </form>
+{% endblock %}

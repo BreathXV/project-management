@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Project Details</h2>
+  <h3>{{ project[1] }}</h3>
+  <p><strong>Tag:</strong> {{ project[2] }}</p>
+  <p><strong>Description:</strong> {{ project[3] }}</p>
+  <p><strong>Payment: £</strong> ${{ project[4] }}</p>
+  <p><strong>Due Date:</strong> {{ project[5] }}</p>
+  <p><strong>Platform:</strong> {{ project[6] }}</p>
+{% endblock %}

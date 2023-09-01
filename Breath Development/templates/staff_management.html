@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Staff Management</h2>
+    <form method="post" action="{{ url_for('register_user') }}">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+            <option value="Team Member">Team Member</option>
+            <option value="Operation Manager">Operation Manager</option>
+            <option value="Administrator">Administrator</option>
+        </select>
+        <button type="submit">Register User</button>
+    </form>
+{% endblock %}

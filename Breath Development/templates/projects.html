@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Your Projects</h2>
+  <div class="project-switch">
+    <a href="{{ url_for('projects', project_type='user') }}" class="{% if project_type == 'user' %}active{% endif %}">Your Projects</a>
+    <a href="{{ url_for('projects', project_type='all') }}" class="{% if project_type == 'all' %}active{% endif %}">All Projects</a>
+  </div>
+  <ul class="project-list">
+    {% for project in projects %}
+      <li class="project-item">
+        <a href="{{ url_for('project_details', project_id=project[0]) }}" class="project-link">
+          <div class="project-details">
+            <h3>{{ project[1] }}</h3>
+            <p><strong>Tag:</strong> {{ project[2] }}</p>
+            <p><strong>Assignee:</strong> {{ project[3] }}</p>
+            <p><strong>Description:</strong> {{ project[4] }}</p>
+            <p><strong>Payment:</strong> £{{ project[5] }}</p>
+            <p><strong>Due Date:</strong> {{ project[6] }}</p>
+            <p><strong>Platform:</strong> {{ project[7] }}</p>
+          </div>
+          <div class="project-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

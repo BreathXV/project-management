@@ -1,0 +1,54 @@
+2023-09-01 12:53:36,892 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-01 12:53:36,892 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-09-01 12:53:40,841 - root - ERROR - An error occurred: Could not build url for endpoint 'projects'. Did you forget to specify values ['project_type']?
+2023-09-01 12:53:40,842 - app - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard' did not return a valid response. The function either returned None or ended without a return statement.
+2023-09-01 12:53:40,843 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 12:53:40] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2023-09-01 12:53:41,393 - root - ERROR - An error occurred: Could not build url for endpoint 'projects'. Did you forget to specify values ['project_type']?
+2023-09-01 12:53:41,393 - app - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard' did not return a valid response. The function either returned None or ended without a return statement.
+2023-09-01 12:53:41,394 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 12:53:41] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2023-09-01 12:53:45,580 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 12:53:45] "GET /login HTTP/1.1" 200 -
+2023-09-01 12:53:45,606 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 12:53:45] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2023-09-01 12:53:49,262 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 12:53:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-09-01 12:53:49,266 - root - ERROR - An error occurred: Could not build url for endpoint 'projects'. Did you forget to specify values ['project_type']?
+2023-09-01 12:53:49,266 - app - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kiera\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard' did not return a valid response. The function either returned None or ended without a return statement.
+2023-09-01 12:53:49,267 - werkzeug - INFO - 127.0.0.1 - - [01/Sep/2023 12:53:49] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -

@@ -1,0 +1,24 @@
+{
+    "ErrorCodes": {
+        "0x000001": {
+            "code": "0x000001",
+            "desc": "We couldn't save this information to the database."
+        },
+        "0x000064": {
+            "code": "0x000064",
+            "desc": "We couldn't load certain resources needed to view this webpage."
+        },
+        "0x000042": {
+            "code":"0x000042",
+            "desc": "A fatal error occurred when connecting to this webpage on our end."
+        },
+        "0x000099": {
+            "code": "0x000099",
+            "desc": "An error occurred when saving your user information."
+        },
+        "0x000052": {
+            "code": "0x000052",
+            "desc": "We couldn't retrieve information from the database."
+        }
+    }
+}

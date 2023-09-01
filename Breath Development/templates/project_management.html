@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Project Management</h2>
+
+    <!-- Assign Members Section -->
+    <section id="assign-members-section">
+        <h3>Assign Members to Projects</h3>
+        <form method="POST" action="{{ url_for('assign_members') }}">
+            <label for="project-id">Project ID:</label>
+            <input type="text" name="project-id" id="project-id" required>
+            <label for="member-username">Member Username:</label>
+            <input type="text" name="member-username" id="member-username" required>
+            <button type="submit">Assign Member</button>
+        </form>
+    </section>
+
+    <!-- Delete Project Section -->
+    <section id="delete-project-section">
+        <h3>Delete Project</h3>
+        <form method="POST" action="{{ url_for('delete_project') }}">
+            <label for="project-id-delete">Select a Project to Delete:</label>
+            <select name="project-id-delete" id="project-id-delete" required>
+                {% for project in projects %}
+                    <option value="{{ project[0] }}">{{ project[0] }} - {{ project[1] }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Delete Project</button>
+        </form>
+    </section>
+
+    <!-- User Table -->
+    <table class="user-table">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user[0] }}</td>
+                    <td>{{ user[1] }}</td>
+                    <td>{{ user[3] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
