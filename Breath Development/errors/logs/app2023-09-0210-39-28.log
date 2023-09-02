@@ -1,0 +1,13 @@
+2023-09-02 10:39:28,767 - root - INFO - Admin user already exists.
+2023-09-02 10:39:28,779 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-02 10:39:28,779 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-09-02 10:39:28,781 - werkzeug - INFO -  * Restarting with stat
+2023-09-02 10:39:28,997 - root - INFO - Admin user already exists.
+2023-09-02 10:39:29,003 - werkzeug - WARNING -  * Debugger is active!
+2023-09-02 10:39:29,005 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-02 10:39:32,479 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:39:32] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2023-09-02 10:39:32,532 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:39:32] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-02 10:39:32,533 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:39:32] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-02 10:39:32,591 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:39:32] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-02 10:39:32,611 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:39:32] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

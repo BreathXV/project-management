@@ -1,0 +1,14 @@
+2023-09-02 15:44:29,804 - root - INFO - Admin user already exists.
+2023-09-02 15:44:29,810 - werkzeug - WARNING -  * Debugger is active!
+2023-09-02 15:44:29,812 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-02 15:44:33,394 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:44:33,394 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:44:33] "[32mGET /projects/all HTTP/1.1[0m" 302 -
+2023-09-02 15:44:33,402 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:44:33] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:44:33,412 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:44:33] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:44:33,433 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:44:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:44:35,830 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:44:35] "GET /staff_management HTTP/1.1" 200 -
+2023-09-02 15:44:35,842 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:44:35] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:44:35,842 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:44:35] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:44:37,374 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:44:37] "GET /project_management HTTP/1.1" 200 -
+2023-09-02 15:44:37,384 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:44:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:44:37,386 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:44:37] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -

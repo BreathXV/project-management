@@ -1,0 +1,62 @@
+2023-09-02 15:36:53,376 - root - INFO - Admin user already exists.
+2023-09-02 15:36:53,390 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-02 15:36:53,390 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-09-02 15:36:53,392 - werkzeug - INFO -  * Restarting with stat
+2023-09-02 15:36:53,618 - root - INFO - Admin user already exists.
+2023-09-02 15:36:53,624 - werkzeug - WARNING -  * Debugger is active!
+2023-09-02 15:36:53,626 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-02 15:36:55,441 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:36:55,444 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:36:55] "[35m[1mGET /projects/all HTTP/1.1[0m" 500 -
+2023-09-02 15:36:55,500 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:36:55] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-02 15:36:55,500 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:36:55] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-02 15:36:55,510 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:36:55] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-02 15:36:55,516 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:36:55] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-02 15:36:56,683 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:36:56,684 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:36:56] "[35m[1mGET /projects/all HTTP/1.1[0m" 500 -
+2023-09-02 15:36:56,692 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:36:56] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-02 15:36:56,693 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:36:56] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-02 15:36:56,700 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:36:56] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-02 15:36:56,704 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:36:56] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-02 15:37:23,088 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:23] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:37:23,095 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:23] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:37:23,095 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:25,637 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:25] "GET /projects/user HTTP/1.1" 200 -
+2023-09-02 15:37:25,648 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:25] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:37:25,648 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:25] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:27,434 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:27] "GET /projects/user HTTP/1.1" 200 -
+2023-09-02 15:37:27,444 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:27,445 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:27] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:37:28,806 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:28] "GET /projects/user HTTP/1.1" 200 -
+2023-09-02 15:37:28,816 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:28] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:37:28,816 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:29,149 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:37:29,151 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:29] "[35m[1mGET /projects/all HTTP/1.1[0m" 500 -
+2023-09-02 15:37:29,161 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:29] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:29,162 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:29] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-02 15:37:29,189 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:29] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-02 15:37:29,196 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:29] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-02 15:37:31,002 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:31] "GET /projects/user HTTP/1.1" 200 -
+2023-09-02 15:37:31,009 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:31] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:37:31,010 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:31] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:34,873 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:34] "GET /create_project.html HTTP/1.1" 200 -
+2023-09-02 15:37:34,885 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:34] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:37:34,885 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:54,172 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:54] "[32mPOST /create_project.html HTTP/1.1[0m" 302 -
+2023-09-02 15:37:54,176 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:54] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:37:54,191 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:54] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:37:54,191 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:55,634 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:55] "GET /projects/user HTTP/1.1" 200 -
+2023-09-02 15:37:55,646 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:55] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:37:55,646 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:56,325 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:56] "GET /projects/user HTTP/1.1" 200 -
+2023-09-02 15:37:56,334 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:56] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:37:56,335 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:56] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:58,886 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:37:58,888 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:58] "[35m[1mGET /projects/all HTTP/1.1[0m" 500 -
+2023-09-02 15:37:58,899 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:58] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-02 15:37:58,900 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:58] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-02 15:37:58,907 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:58] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-02 15:37:58,912 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:37:58] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-02 15:40:22,211 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kiera\\Documents\\GitHub\\project-management\\Breath Development\\app.py', reloading
+2023-09-02 15:40:22,239 - werkzeug - INFO -  * Restarting with stat

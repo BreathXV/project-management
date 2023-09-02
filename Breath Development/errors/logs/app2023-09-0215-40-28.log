@@ -1,0 +1,30 @@
+2023-09-02 15:40:28,413 - root - INFO - Admin user already exists.
+2023-09-02 15:40:28,424 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-02 15:40:28,424 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-09-02 15:40:28,426 - werkzeug - INFO -  * Restarting with stat
+2023-09-02 15:40:28,647 - root - INFO - Admin user already exists.
+2023-09-02 15:40:28,653 - werkzeug - WARNING -  * Debugger is active!
+2023-09-02 15:40:28,655 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-02 15:40:33,377 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:40:33,378 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:33] "[32mGET /projects/all HTTP/1.1[0m" 302 -
+2023-09-02 15:40:33,384 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:33] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:40:33,392 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:33] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:40:33,414 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:40:34,612 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:40:34,613 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:34] "[32mGET /projects/all HTTP/1.1[0m" 302 -
+2023-09-02 15:40:34,624 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:34] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:40:34,633 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:34] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:40:34,633 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:40:36,381 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:40:36,381 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:36] "[32mGET /projects/all HTTP/1.1[0m" 302 -
+2023-09-02 15:40:36,385 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:36] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:40:36,394 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:36] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:40:36,394 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:40:37,402 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:40:37,402 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:37] "[32mGET /projects/all HTTP/1.1[0m" 302 -
+2023-09-02 15:40:37,406 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:37] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:40:37,415 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:37] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:40:37,415 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:40:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:42:23,984 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kiera\\Documents\\GitHub\\project-management\\Breath Development\\app.py', reloading
+2023-09-02 15:42:24,010 - werkzeug - INFO -  * Restarting with stat

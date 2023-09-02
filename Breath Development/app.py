@@ -52,6 +52,32 @@ def initialize_database():
     conn.commit()
     conn.close()
     print("Database tables initialized successfully.")
+    
+def administrator():
+    username = 'root'
+    password = 'admin'
+    role = 'Administrator'
+    
+    existing_user = get_user(username)
+    
+    if existing_user:
+        logging.info('Admin user already exists.')
+    else:
+        try:
+            hashed_password = generate_password_hash(password, method='sha256')
+
+            # Insert the user into the database
+            conn = sqlite3.connect('database.db')
+            cursor = conn.cursor()
+            cursor.execute('INSERT INTO users (username, password, role) VALUES (?, ?, ?)',
+                        (username, hashed_password, role))
+            conn.commit()
+        except Exception as e:
+            logging.error('An error occurred: %s', str(e))
+        finally:
+            logging.info('Admin user has been succesfully created.')
+            if conn:
+                conn.close()
 
 def login_required(f):
     @wraps(f)
@@ -96,7 +122,7 @@ def get_user(username):
     finally:
         if conn:
             conn.close()
-            return user
+    return user
 
 def create_project_in_database(project_data):
     try:
@@ -129,7 +155,8 @@ def get_user_projects(username):
     finally:
         if conn:
             conn.close()
-            return user_projects
+    
+    return user_projects
 
 def get_project_by_id(project_id):
     try:
@@ -161,32 +188,35 @@ def fetch_projects():
 
 def get_all_projects():
     try:
-        conn = sqlite3.connect('your_database.db')  # Replace 'your_database.db' with your database file path
+        conn = sqlite3.connect('database.db')
         cursor = conn.cursor()
 
         cursor.execute("SELECT * FROM projects")
 
         all_projects = []
         for row in cursor.fetchall():
-            project = {
-                'id': row[0],
-                'project_name': row[1],
-                'project_tag': row[2],
-                'assignee': row[3],
-                'project_description': row[4],
-                'project_payment': row[5],
-                'project_due_date': row[6],
-                'project_platform': row[7]
-            }
-            all_projects.append(project)
+            if len(row) > 0:  # Check if the row is not empty
+                project = {
+                    'id': row[0],
+                    'project_name': row[1],
+                    'project_tag': row[2],
+                    'assignee': row[3],
+                    'project_description': row[4],
+                    'project_payment': row[5],
+                    'project_due_date': row[6],
+                    'project_platform': row[7]
+                }
+                all_projects.append(project)
+            else:
+                return []
 
         conn.close()
-
-        return all_projects
 
     except Exception as e:
         logging.error('An error occurred while fetching all projects: %s', str(e))
         return []
+
+    return all_projects
 
 def delete_project_by_id(project_id):
     try:
@@ -216,7 +246,7 @@ def login():
         
         if user and check_password_hash(user[2], password):
             session['username'] = username
-            session['is_admin'] = (username == 'root')  # Set is_admin for root user
+            session['is_admin'] = (username == 'root' and password == 'admin')  # Set is_admin for root user with correct password
             return redirect(url_for('dashboard'))
         else:
             flash('Invalid credentials. Please try again.', 'danger')
@@ -296,7 +326,7 @@ def delete_project():
         if request.method == 'POST':
             project_id = request.form['project-id-delete']
 
-            conn = sqlite3.connect('./database.db')
+            conn = sqlite3.connect('database.db')
             cursor = conn.cursor()
             cursor.execute('SELECT * FROM projects WHERE id = ?', (project_id,))
             project = cursor.fetchone()
@@ -384,6 +414,8 @@ def projects(project_type):
             return redirect(url_for('login'))
     except Exception as e:
         logging.error('An error occurred: %s', str(e))
+        flash('An error occurred while processing your request.', 'error')
+        return redirect(url_for('dashboard'))
 
 @app.route('/project/<int:project_id>')
 @login_required
@@ -446,4 +478,5 @@ def error_page(errorIdentifier, errorMessage, errorFunction):
 
 if __name__ == '__main__':
     initialize_database()
+    administrator()
     app.run(debug=True)

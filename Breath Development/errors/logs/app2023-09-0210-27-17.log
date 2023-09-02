@@ -1,0 +1,13 @@
+2023-09-02 10:27:17,150 - werkzeug - WARNING -  * Debugger is active!
+2023-09-02 10:27:17,152 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-02 10:27:20,476 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:27:20] "POST /login HTTP/1.1" 200 -
+2023-09-02 10:27:20,485 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:27:20] "[32mGET /static/css/login.css HTTP/1.1[0m" 302 -
+2023-09-02 10:27:20,538 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:27:20] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:27:20,549 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:27:20] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-09-02 10:27:20,553 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:27:20] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:27:24,455 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:27:24] "POST /login HTTP/1.1" 200 -
+2023-09-02 10:27:24,463 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:27:24] "[32mGET /static/css/login.css HTTP/1.1[0m" 302 -
+2023-09-02 10:27:24,511 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:27:24] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:27:24,523 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:27:24] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-09-02 10:27:24,526 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:27:24] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:31:21,809 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kiera\\Documents\\GitHub\\project-management\\Breath Development\\app.py', reloading

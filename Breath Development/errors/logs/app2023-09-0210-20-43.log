@@ -1,0 +1,30 @@
+2023-09-02 10:20:43,364 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-02 10:20:43,364 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-09-02 10:20:43,366 - werkzeug - INFO -  * Restarting with stat
+2023-09-02 10:20:43,588 - werkzeug - WARNING -  * Debugger is active!
+2023-09-02 10:20:43,591 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-02 10:20:56,145 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:20:56] "[32mGET / HTTP/1.1[0m" 302 -
+2023-09-02 10:20:56,158 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:20:56] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:20:56,173 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:20:56] "[32mGET /static/css/login.css HTTP/1.1[0m" 302 -
+2023-09-02 10:20:56,176 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:20:56] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:20:56,186 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:20:56] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-09-02 10:20:56,190 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:20:56] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:21:00,193 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:00] "POST /login HTTP/1.1" 200 -
+2023-09-02 10:21:00,201 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:00] "[32mGET /static/css/login.css HTTP/1.1[0m" 302 -
+2023-09-02 10:21:00,204 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:00] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:21:00,209 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:00] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-09-02 10:21:00,211 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:00] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:21:04,223 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:04] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-09-02 10:21:04,226 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:04] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:21:04,234 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:04] "[32mGET /static/css/login.css HTTP/1.1[0m" 302 -
+2023-09-02 10:21:04,236 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:04] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:21:04,241 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:04] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-09-02 10:21:04,243 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:04] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:21:43,257 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:43] "POST /login HTTP/1.1" 200 -
+2023-09-02 10:21:43,265 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:43] "[32mGET /static/css/login.css HTTP/1.1[0m" 302 -
+2023-09-02 10:21:43,266 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:43] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:21:43,271 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:43] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-09-02 10:21:43,273 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 10:21:43] "GET /login HTTP/1.1" 200 -
+2023-09-02 10:22:55,945 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kiera\\Documents\\GitHub\\project-management\\Breath Development\\app.py', reloading
+2023-09-02 10:22:55,969 - werkzeug - INFO -  * Restarting with stat

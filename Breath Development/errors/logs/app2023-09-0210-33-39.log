@@ -1,0 +1,11 @@
+2023-09-02 10:33:39,717 - root - INFO - Admin user has been succesfully created.
+2023-09-02 10:33:39,730 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-02 10:33:39,730 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-09-02 10:33:39,732 - werkzeug - INFO -  * Restarting with stat
+2023-09-02 10:33:39,954 - root - ERROR - An error occurred: UNIQUE constraint failed: users.username
+2023-09-02 10:33:39,954 - root - INFO - Admin user has been succesfully created.
+2023-09-02 10:33:39,960 - werkzeug - WARNING -  * Debugger is active!
+2023-09-02 10:33:39,962 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-02 10:36:26,414 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kiera\\Documents\\GitHub\\project-management\\Breath Development\\app.py', reloading
+2023-09-02 10:36:26,438 - werkzeug - INFO -  * Restarting with stat

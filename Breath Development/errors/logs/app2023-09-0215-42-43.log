@@ -1,0 +1,28 @@
+2023-09-02 15:42:43,219 - root - INFO - Admin user already exists.
+2023-09-02 15:42:43,224 - werkzeug - WARNING -  * Debugger is active!
+2023-09-02 15:42:43,226 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-02 15:42:44,706 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:44] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:42:44,715 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:44] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:42:44,736 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:42:46,518 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:42:46,519 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:46] "[32mGET /projects/all HTTP/1.1[0m" 302 -
+2023-09-02 15:42:46,522 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:46] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:42:46,532 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:46] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:42:46,533 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:46] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:42:52,765 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:42:52,766 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:52] "[32mGET /projects/all HTTP/1.1[0m" 302 -
+2023-09-02 15:42:52,770 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:52] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:42:52,779 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:52] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:42:52,780 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:42:54,215 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 15:42:54,215 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:54] "[32mGET /projects/all HTTP/1.1[0m" 302 -
+2023-09-02 15:42:54,219 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:54] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:42:54,229 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:54] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:42:54,230 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:42:58,385 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:58] "GET /create_project.html HTTP/1.1" 200 -
+2023-09-02 15:42:58,395 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:58] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:42:58,396 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:58] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:42:59,887 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:59] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:42:59,898 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:59] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:42:59,899 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-02 15:44:29,529 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kiera\\Documents\\GitHub\\project-management\\Breath Development\\app.py', reloading

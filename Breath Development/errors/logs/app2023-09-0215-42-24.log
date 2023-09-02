@@ -1,0 +1,6 @@
+2023-09-02 15:42:24,251 - root - INFO - Admin user already exists.
+2023-09-02 15:42:24,257 - werkzeug - WARNING -  * Debugger is active!
+2023-09-02 15:42:24,259 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-02 15:42:33,117 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:33] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 15:42:33,128 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:33] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 15:42:33,148 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 15:42:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -

@@ -1,0 +1,14 @@
+2023-09-02 14:53:56,039 - root - INFO - Admin user already exists.
+2023-09-02 14:53:56,045 - werkzeug - WARNING -  * Debugger is active!
+2023-09-02 14:53:56,047 - werkzeug - INFO -  * Debugger PIN: 901-647-401
+2023-09-02 14:53:59,520 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 14:53:59] "GET /dashboard HTTP/1.1" 200 -
+2023-09-02 14:53:59,530 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 14:53:59] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+2023-09-02 14:53:59,557 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 14:53:59] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-09-02 14:53:59,570 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 14:53:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-09-02 14:54:01,328 - root - ERROR - An error occurred: dict object has no element 0
+2023-09-02 14:54:01,330 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 14:54:01] "[35m[1mGET /projects/all HTTP/1.1[0m" 500 -
+2023-09-02 14:54:01,342 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 14:54:01] "GET /projects/all?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-02 14:54:01,343 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 14:54:01] "GET /projects/all?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-02 14:54:01,350 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 14:54:01] "GET /projects/all?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-02 14:54:01,355 - werkzeug - INFO - 127.0.0.1 - - [02/Sep/2023 14:54:01] "[36mGET /projects/all?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-02 15:20:21,261 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kiera\\Documents\\GitHub\\project-management\\Breath Development\\app.py', reloading
